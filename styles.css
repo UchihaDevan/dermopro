@@ -20,7 +20,9 @@ body {
 
 /* Header */
 .header {
-    background: white;
+    background: rgba(227, 209, 209, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
@@ -36,7 +38,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 80px 0;
-    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    background: #E3D1D1;
     overflow: hidden;
 }
 
@@ -96,7 +98,7 @@ body {
 /* Product Introduction */
 .product-intro {
     padding: 80px 0;
-    background: white;
+    background: #E3D1D1;
 }
 
 .section-title {
@@ -116,7 +118,7 @@ body {
 .benefit-item {
     text-align: center;
     padding: 30px;
-    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    background: #F6F5EE;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
