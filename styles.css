@@ -9,7 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(135deg, #E3D1D1 0%, #E3D1D1 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .container {
@@ -20,9 +20,7 @@ body {
 
 /* Header */
 .header {
-    background: rgba(227, 209, 209, 0.56);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(10px);
+    background: white;
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
@@ -38,7 +36,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 80px 0;
-    background: #E3D1D1;
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
     overflow: hidden;
 }
 
@@ -98,7 +96,7 @@ body {
 /* Product Introduction */
 .product-intro {
     padding: 80px 0;
-    background: #E3D1D1;
+    background: white;
 }
 
 .section-title {
@@ -118,7 +116,7 @@ body {
 .benefit-item {
     text-align: center;
     padding: 30px;
-    background: #F6F5EE;
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -231,7 +229,7 @@ body {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(45deg, #DF4344, #ff6b7a);
+    background: linear-gradient(45deg, #dc3545, #ff6b7a);
     color: white;
     padding: 25px 50px;
     font-size: 1.4rem;
@@ -419,7 +417,6 @@ body {
 }
 
 .product-card {
-    background: white;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -428,6 +425,8 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .product-card:hover {
@@ -441,12 +440,32 @@ body {
     font-weight: bold;
 }
 
+.old-product {
+    background-color: #131111;
+    color: #f8f9fa;
+    border: 2px solid #00FF23;
+}
+
 .old-product h3 {
-    color: #6c757d; /* Cinza para o produto antigo */
+    color: #00FF23;
+}
+
+.old-product p {
+    color: #ccc;
+}
+
+.new-product {
+    background-color: #F5F4ED;
+    color: #333;
+    border: 2px solid #DF4344;
 }
 
 .new-product h3 {
-    color: #dc3545; /* Vermelho para o produto novo */
+    color: #DF4344;
+}
+
+.new-product p {
+    color: #555;
 }
 
 .comparison-image {
@@ -458,8 +477,37 @@ body {
 
 .product-card p {
     font-size: 1.1rem;
-    color: #555;
     line-height: 1.7;
+}
+
+.product-card .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.old-product .btn {
+    background-color: #00FF23;
+    color: #131111;
+}
+
+.old-product .btn:hover {
+    background-color: #00e620;
+    transform: translateY(-3px);
+}
+
+.new-product .btn {
+    background-color: #DF4344;
+    color: #FFFFFF;
+}
+
+.new-product .btn:hover {
+    background-color: #c83b3b;
+    transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
@@ -467,5 +515,3 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-
