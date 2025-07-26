@@ -399,3 +399,71 @@ body {
     left: 100%;
 }
 
+
+
+/* Comparison Section */
+.comparison-section {
+    padding: 80px 0;
+    background: #f0f2f5;
+    text-align: center;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+    align-items: start;
+}
+
+.product-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.product-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.old-product h3 {
+    color: #6c757d; /* Cinza para o produto antigo */
+}
+
+.new-product h3 {
+    color: #dc3545; /* Vermelho para o produto novo */
+}
+
+.comparison-image {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
