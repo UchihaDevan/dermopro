@@ -15,12 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             this.style.transform = 'translateY(-5px) scale(1)';
             
-            // Aqui você pode adicionar a URL real do produto
-            // window.location.href = 'https://sua-pagina-do-produto.com';
-            
-            // Por enquanto, mostra um alerta
-            alert('Redirecionando para a página do DermoPro...');
-            
+            window.location.href = 'http://www.dermoclub.pro/';
         }, 150);
     });
     
